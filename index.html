@@ -343,12 +343,12 @@ footer p{margin:10px 0 0;}
     </svg>
     <p class="kicker">Soul Family Blueprint</p>
     <h1>Mia <em>Strickland</em></h1>
-    <p class="sub">Two sessions, ten months apart, and six Tuesdays just begun</p>
+    <p class="sub">Three sessions across ten months, and six Tuesdays under way</p>
     <p class="dek">Everything from our time together so far: what each session asked of your body, your voice and your heart, the practices I gave you, and the threads that came back ten months apart. Your words, wherever I could use them.</p>
     <div class="meta-row">
-      <span class="chip"><b>2</b> sessions</span>
+      <span class="chip"><b>3</b> sessions</span>
       <span class="chip">December 2025 to October 2026</span>
-      <span class="chip">Sacred Container · <b>1</b> of 6</span>
+      <span class="chip">Sacred Container · <b>2</b> of 6</span>
       <span class="chip"><b id="rxcount">0</b> practices</span>
       <span class="chip"><b id="thcount">0</b> common threads</span>
     </div>
@@ -363,7 +363,7 @@ footer p{margin:10px 0 0;}
   <div class="wide">
     <p class="eyebrow" style="--c:var(--teal)">At a glance</p>
     <h2>Where you <em style="--c:var(--gold)">are</em></h2>
-    <p class="lede">The short version, before the detail. Two sessions, the next one on the calendar, the five things worth carrying, and the themes that run through both.</p>
+    <p class="lede">The short version, before the detail. Three sessions, the next one on the calendar, the five things worth carrying, and the themes that run through them.</p>
     <div class="g-grid">
       <div>
         <p class="g-label">Our sessions · latest first</p>
@@ -377,7 +377,7 @@ footer p{margin:10px 0 0;}
     <p class="g-label" style="margin-top:44px">Where you started, where you are</p>
     <div class="startnow">
       <figure><small>Where you started · December 3, 2025</small><blockquote>It really is about providing the playground. It’s the divine playground.</blockquote><figcaption>You</figcaption></figure>
-      <figure><small>Where you are · October 13, 2026</small><blockquote>I am so over-ready.</blockquote><figcaption>You</figcaption></figure>
+      <figure><small>Where you are · October 20, 2026</small><blockquote>I don’t want to miss any more of it.</blockquote><figcaption>You</figcaption></figure>
     </div>
     <p class="g-label" style="margin-top:44px">Common themes · tap one</p>
     <div class="themes" id="themes"></div>
@@ -473,8 +473,46 @@ const gl = s => s.replace(/\[\[(\w+)\|([^\]]+)\]\]/g,(m,k,l)=>`<button class="t"
 */
 const SEASONS = [
 {
-  id:'oct26', tab:'Oct 13, 2026', name:'Dig Down', color:'#7FD6A2', latest:true, day:'13', mon:'Oct 2026',
-  eyebrow:'Sacred Container · Session 1 of 6 · Latest', title:'Stop Moving, <em>Dig Down</em>', when:'Tuesday, October 13, 2026',
+  id:'oct20', tab:'Oct 20, 2026', name:'Lay Claim', color:'#E58BB0', latest:true, day:'20', mon:'Oct 2026',
+  eyebrow:'Sacred Container · Session 2 of 6 · Latest', title:'Lay Claim to Being <em>Here</em>', when:'Tuesday, October 20, 2026',
+  sessions:[['Oct 20',1]],
+  lede:'Last week said stop moving and dig down. This week you came back with roots already going in, and we went one layer deeper: say yes to being here. Lay claim to the human experience, and let your body be the instrument it was always meant to be.',
+  brought:'A week of grounding behind you: more time in meditation, more stillness, more opening, and a lot bubbling up with it. Then the question underneath everything, in your own words: where am I asking to show up and live more fully for myself? Clarity on what you’re here to create, the purpose work you’ve been hiding from, and how to bring it through from your soul instead of your head. Something completely new, built on play and lightness instead of heaviness.',
+  body:[
+    ['tree','Roots going in','Last week your tree kept getting up to walk. This week it stayed, and you could feel it: more stillness, more opening, and momentum building on the step you took. The roots go down through small things. Five more minutes. Feet in the dirt. Sun on your face.',[['Just really even spending more time in meditation with the grounding, the being still, the being quiet to what wants to come in. And it all just is bubbling up.','you'],['You literally took a step from where we went last time, and you’ve got momentum that is building on that step.','me'],['It is the extra five or ten minutes in meditation. It is the extra time with your ass in the grass, feet in the dirt, feeling the sun.','me']]],
+    ['mountain','The obstacle is the way','You’re the first person I can remember where we had to start at the [[crown|crown]]. Your comfort lives in the metaphysical, and for years your body has felt like the thing in the way. Marcus Aurelius had a line for that: the obstacle is the way. Your body isn’t blocking your soul. It’s the tuning fork your soul comes through.',[['Your level of comfort is in the metaphysical. Not in the physical. Don’t look at it as an obstacle.','me'],['The thing that you feel is the thing that is blocking you is the very thing that is the tuning fork for your soul to come through.','me']]],
+    ['throat','The swallow test','A sip of water, then “My name is Michelle,” and a swallow. Easy. Then “My name is Linda,” and you physically couldn’t swallow it. That’s how truth shows up in your body. Your [[sacral|sacral]] is strong. It knows yes and no right away. You’ve just been dialing away from it.',[['I couldn’t swallow it. I physically couldn’t make it happen.','you'],['This is how truth shows up in our bodies.','me'],['Your sacral energy is incredibly strong. You know things from your sacral right away. It’s a yes, it’s a no.','me']]]
+  ],
+  work:[
+    ['star','Lay claim to the human experience','You’re a divine being having a human experience, and part of you has never been sure it wanted the human part. What came through was simple: lay claim to it. Choose to be here. The fear is that grounding costs you your connection to spirit. It does the opposite. Every yes to being here makes that connection deeper, richer and more vivid.',[['You are a divine being having a human experience.','me'],['It gets deeper. It gets richer. It gets more vivid because now you’re saying yes to Source.','me'],['When you accept the limitations, you break free of all of the limitations.','me']]],
+    ['people','Something completely new','You named what you’re here to bring: not more heaviness, but play, lightness and fun. Something that stands out because it feels new to people. And you named how it has to come through: from your soul space, not your head.',[['I am a pillar. I am a leader.','you'],['I want to really stand out and offer something completely new.','you'],['It’s got to be done from my soul space versus my head.','you']]],
+    ['compass','Just get in the car','What to build, how it all fits: you’ve been trying to put a jigsaw puzzle together on the roof of a car doing 100 miles an hour, pieces flying everywhere. Get in the car. Windows up, the map stops blowing away, and the GPS already knows the way. Sometimes it takes a detour, because there’s someone to pick up.',[['We’re just going across the street.','you'],['You’ve been trying to put a jigsaw puzzle together while standing on top of the car while the car is going 100 miles an hour. Pieces just flying all over.','me'],['Just get in the car.','me'],['That vision is gonna be clearer and clearer as you connect back to your body, back to this earth.','me']]],
+    ['arrow','You named it first','I asked how to put what you want into words: to live more fully, aligned with the vision. You said you already knew a piece of it, and you did. It was the foundation for everything that came after.',[['I think I already know a piece of it as you were saying it.','you'],['It’s bringing the mind, the body, and the soul into coherence and unified in the oneness and embodying that.','you'],['You’re right, because that’s the foundation of it.','me']]]
+  ],
+  mind:[
+    ['key','Gnosis with a G','[[gnosis|Gnosis]] with a G is God’s knowing, deep in the heart. Knowing with a K is the attorney: the part that wants to explain and understand. Both belong. The truth itself is neither good nor bad. It simply is. The work now is letting what you already know drop out of your head and into your body, until your knowing is a feeling instead of a thought.',[['Gnosis, remember, is with a G. That’s God’s knowing.','me'],['Knowing with the K, that’s the attorney.','me'],['The truth simply is. It’s not positive. It’s not negative.','me'],['Now your knowing is a feeling instead of a thought form.','me']]],
+    ['cup','Two buckets','You said your journey has been dense and painful. What came through was you carrying two buckets, one dense and one painful, and taking them to every well. Go looking for heavy and every well comes up heavy. It’s a choice. Go back to the playground, let joy sit right beside the grief, and laugh along the way. That never means denying a feeling.',[['Dense. Painful.','you'],['If you go looking for dense and heavy, every well that you go drop the buckets into is going to be dense and heavy. And here’s the beautiful thing: all of it is a choice.','me'],['I can also choose to laugh along the way.','me']]],
+    ['compass','Order within','The order you’re waiting for out there starts in here. Bring order within, and your life starts falling into that same order, because you’re the one carrying the frequency. You finished the line yourself.',[['Order within.','you'],['So within, so without.','you'],['If we’re really infinitely powerful, then us bringing order within restores the order without.','me']]],
+    ['heartbeat','I don’t want to miss any more of it','The moment it landed, you said it plainly: you’ve been resisting the human experience. And in the very next breath, gratitude. Being all of it at the same time, the joy right alongside everything else.',[['That’s the key right there, because I have been fucking resisting it.','you'],['I am being more aware of the gratitude and how precious this physical life is, and I don’t want to miss any more of it.','you'],['I get to be that light. I get to be the example. I get to be all of it.','you'],['When you choose, okay, I’m a human in this thing, I’m gonna lean into this shit, the switchboard lights up.','me'],['Lean in. It’s yours.','me']]]
+  ],
+  rx:[
+    ['throat','The swallow test','When you need a yes or a no','A sip of water. Say a statement out loud, then swallow right away. Start with one you already know, like “My name is Michelle,” then “My name is Linda,” and feel the difference. Then try what you actually want to know. Easy to swallow is a yes. Hard to swallow is your body telling you something. It doesn’t have to be water: a weight held out at arm’s length works too, strong for yes, sinking for no.','Whenever your head can’t decide.','“This is you using the tool that is the divine intelligence.”','#E58BB0','now'],
+    ['tree','Five more minutes of roots','Every day','Add five or ten minutes to your meditation, and spend extra time with your feet in the dirt and the sun on your face. Each time, say it to yourself: I am here to be a part of this human existence. I’m choosing to be here.','Daily.','“The more you say yes to being here and being grounded, the more powerful you become.”','#C8242B','now'],
+    ['leaf','Six minutes with Pachamama','When it gets heavy','Go outside and sit in the grass. Let yourself cry and feel all of it, knowing the Earth is holding you. See how long you can stay heavy. Let her pull it out of you until you even out, and the laughter comes.','Whenever the buckets get heavy.','“The Earth is just aching to hold you.”','#3FA86A','now'],
+    ['sun','Choose the playground','When the work feels dense','Notice which buckets you’re carrying. You can expect the tears and still choose to laugh along the way. Let the joy you’re heading toward sit right beside the grief, without denying either one.','Whenever the work gets heavy.','“All of it is a choice.”','#F2C230','now']
+  ],
+  notes:[
+    '<b>Lay claim to being human.</b> You chose to be here.',
+    '<b>The obstacle is the way.</b> Your body is the instrument, not the thing in the way.',
+    '<b>Gnosis with a G.</b> Let the knowing drop from your head into your body.',
+    '<b>Order within</b> restores order without.',
+    '<b>Just get in the car.</b> The vision gets clearer as the roots go down.',
+    '<b>“It’s time for me to do some shifting.”</b> Your words. You’re ready.'
+  ]
+},
+{
+  id:'oct26', tab:'Oct 13, 2026', name:'Dig Down', color:'#7FD6A2', day:'13', mon:'Oct 2026',
+  eyebrow:'Sacred Container · Session 1 of 6', title:'Stop Moving, <em>Dig Down</em>', when:'Tuesday, October 13, 2026',
   sessions:[['Oct 13',1]],
   lede:'We started at the top, at your [[crown|crown]], because that’s your home ground, and worked our way down to where the work actually lives right now: the root. A tree trying to walk like an octopus, and a very simple message. Stop moving.',
   brought:'You asked for two things in your own words: action steps for purpose, for Being, and action steps for flowing finances, with the intention that finances are flowing in by the end of our six weeks. Underneath both, a vision you can already see in full, and the quiet ache of watching your outer life lag behind what you know is true.',
@@ -568,6 +606,13 @@ const THREADS = [
 
 /* Scenes */
 const SCENES = {
+  oct20:`<svg viewBox="0 0 520 300" aria-hidden="true"><defs><radialGradient id="sg2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F2C230" stop-opacity=".55"/><stop offset="1" stop-color="#F2C230" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="420" cy="62" r="46" fill="url(#sg2)"/><circle cx="420" cy="62" r="11" fill="#F2C230" opacity=".9"/>
+    <line x1="40" y1="120" x2="480" y2="120" stroke="#D9A648" stroke-width="1.6"/>
+    <path d="M260 120 C256 98 264 80 260 56" stroke="#E58BB0" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M260 78 C244 72 236 62 234 48 C248 50 258 62 260 78Z M260 70 C274 62 282 52 284 38 C270 40 262 52 260 70Z" fill="#3FA86A" opacity=".85"/>
+    ${['M260 120 V286','M260 120 C246 160 226 200 200 280','M260 120 C274 160 294 200 320 280','M260 120 C232 150 196 170 150 230','M260 120 C288 150 324 170 370 230','M240 190 C222 208 206 214 186 216','M282 196 C300 212 318 218 338 220'].map((d,i)=>`<path d="${d}" stroke="#C8242B" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="220" stroke-dashoffset="220"><animate attributeName="stroke-dashoffset" from="220" to="0" dur="2.6s" begin="${.3+i*.35}s" fill="freeze"/></path>`).join('')}
+    <text x="26" y="40" font-family="Instrument Serif,serif" font-style="italic" font-size="22" fill="#EFE7DA" opacity=".85">“lay claim to being here”</text></svg>`,
   oct26:`<svg viewBox="0 0 520 300" aria-hidden="true">
     <line x1="40" y1="150" x2="480" y2="150" stroke="#D9A648" stroke-width="1.6"/>
     <path d="M260 150 C256 120 264 100 260 70" stroke="#7FD6A2" stroke-width="3" fill="none" stroke-linecap="round"/>
@@ -651,7 +696,7 @@ function threads(){
   const stops = [
     ['Dec 2025','Our first session. You are the field.','#D9A648',0],
     ['Oct 13','Session 1 of 6. Stop moving, dig down.','#7FD6A2',0],
-    ['Oct 20','Session 2 of 6.','#8FB0F0',1],
+    ['Oct 20','Session 2 of 6. Lay claim to being here.','#E58BB0',0],
     ['Oct 27','Session 3 of 6.','#8FB0F0',1],
     ['Nov 3','Session 4 of 6.','#8FB0F0',1],
     ['Nov 10','Session 5 of 6.','#8FB0F0',1],
@@ -696,10 +741,10 @@ function buildPage(){
   </div>`;
 }
 
-/* The Build: Mia's 13 practices, sorted by how she uses them. Names must match the session rx names exactly. */
+/* The Build: Mia's 17 practices, sorted by how she uses them. Names must match the session rx names exactly. */
 const BUILD_SRC = Object.fromEntries(SEASONS.map(S=>[S.id,S]));
 const BUILD_LABEL = Object.fromEntries(SEASONS.map(S=>[S.id,S.tab]));
-const START = [['oct26','Dig down, don’t walk'],['oct26','The mirror line'],['oct26','Name the what, surrender the how']];
+const START = [['oct20','Five more minutes of roots'],['oct20','The swallow test'],['oct26','The mirror line']];
 const MANTRAS = [
   ['Money is not my reward, it is my reflection.','October 13, 2026 · The mirror line'],
   ['I sit in the seat of the Infinite One. I create because I am.','December 3, 2025 · The Creator’s Seat'],
@@ -710,13 +755,17 @@ const MANTRAS = [
 ];
 const BUILD = [
   {eyebrow:'Ground and body', title:'Put in <em>roots</em>', dek:'Your crown is wide open. These bring all that current down into the ground, where the vision can land.',
-   items:[['oct26','Dig down, don’t walk'],['dec25','The Abundance Pulse'],['dec25','Box breath for the root'],['dec25','Into the water']]},
+   items:[['oct20','Five more minutes of roots'],['oct26','Dig down, don’t walk'],['dec25','The Abundance Pulse'],['dec25','Box breath for the root'],['dec25','Into the water']]},
+  {eyebrow:'Your body’s yes and no', title:'The <em>instrument</em>', dek:'Your body isn’t the obstacle. Ask it a question and it answers.',
+   items:[['oct20','The swallow test']]},
   {eyebrow:'Daily rituals', title:'Words are <em>spells</em>', dek:'Spoken out loud, every morning. Cast the ones that bring more love, joy and connection into the world.',
    items:[['oct26','The mirror line'],['oct26','Name the what, surrender the how'],['dec25','The Creator’s Seat']]},
   {eyebrow:'Your voice and your page', title:'The <em>claim</em>', dek:'Your throat is the center of this work. Clear it, use it daily, and ask the question that shows you where you still play small.',
    items:[['dec25','Truth frequency'],['dec25','The throat clearing'],['dec25','Where am I still pretending?']]},
   {eyebrow:'In the moment', title:'When the reach <em>starts</em>', dek:'For the second you notice yourself running out to gather it all yourself.',
    items:[['oct26','Stand still in the sandbox'],['dec25','The quantum pause']]},
+  {eyebrow:'When it gets heavy', title:'Choose the <em>playground</em>', dek:'Dense and painful aren’t the only buckets. Joy gets to sit right beside the grief.',
+   items:[['oct20','Six minutes with Pachamama'],['oct20','Choose the playground']]},
   {eyebrow:'With the people around you', title:'The open <em>temple</em>', dek:'Your heart is the temple. All are welcome.',
    items:[['dec25','The silent blessing']]}
 ];
@@ -736,7 +785,7 @@ document.getElementById('thcount').textContent = THREADS.length;
 
 /* At a glance */
 document.getElementById('appts').innerHTML = SEASONS.map(S=>`<button class="appt" style="--a:${S.color}" data-go="${S.id}"><div class="d">${S.day}<small>${S.mon}</small></div><div><h4>${S.title}</h4><p>${S.when}</p></div><span class="go">Open →</span></button>`).join('')
-  + `<div class="appt next" style="--a:#8FB0F0"><div class="d">20<small>Oct</small></div><div><h4>Next: session <em>2 of 6</em></h4><p>Tuesday, October 20, at 12:00 PM Costa Rica time. Already booked.</p></div></div>`;
+  + `<div class="appt next" style="--a:#8FB0F0"><div class="d">27<small>Oct</small></div><div><h4>Next: session <em>3 of 6</em></h4><p>Tuesday, October 27, at 1:00 PM Costa Rica time. Already booked.</p></div></div>`;
 const CARRY = [
   ['Stop moving. Dig down.','The vision needs somewhere to land. Stand still long enough for it to find you.','When you get still, the universe moves itself through you.'],
   ['Claim it out loud.','You already have the voice. Say I Am with your whole chest, in front of people.',''],
@@ -747,11 +796,11 @@ const CARRY = [
 document.getElementById('carry').innerHTML = CARRY.map(([b,s,q])=>`<li><div><b>${b}</b><span>${s}${q?` <q>${q}</q>`:''}</span></div></li>`).join('');
 /* Questions to ponder: [question, context, from-tab, from-label, color] */
 const QS = [
+  ['What did your body say yes to this week, and what was hard to swallow?','Try the swallow test on something small first, then on something that matters. Just notice what it tells you.','oct20','From October 20 · The swallow test','#E58BB0'],
+  ['Where are you still standing on the roof of the car?','Name one place you’re trying to fit the pieces together at 100 miles an hour. What would getting in the car look like there?','oct20','From October 20 · Just get in the car','#E58BB0'],
   ['What is the vision, named out loud, in one sentence you would say in front of a room?','The claim lives in your throat. Practice it here first, then say it to me on Tuesday.','oct26','From October 13 · The claim','#7FD6A2'],
-  ['When did you catch your tree trying to walk this week, and what happened when you stopped?','Just notice the reach. No need to fix it.','oct26','From October 13 · A tree walking like an octopus','#7FD6A2'],
   ['Read the mirror line out loud. What in you wants to argue with it?','That part gets to be heard too. Bring what it says.','oct26','From October 13 · Money is your reflection','#7FD6A2'],
   ['You asked for action steps for flowing finances. What would a step look like that grows out of being, not doing?','Your intention, in your own words. Let’s find the steps that come from the root, not the reach.','oct26','From October 13 · What you brought in','#7FD6A2'],
-  ['What is one emotional truth you held back this week to keep the peace?','Truth over harmony. Their resistance is not yours to fix.','dec25','From December · Truth over harmony','#D9A648'],
   ['Where am I still pretending not to be infinite?','The question from our first session. Ten months later, what does it show you now?','dec25','From December · Where am I still pretending?','#D9A648'],
   ['Who has already turned down your street with a cement truck, and have you noticed them yet?','When you get still, the help starts showing up. Sometimes it already has.','oct26','From October 13 · The cement truck','#7FD6A2']
 ];
